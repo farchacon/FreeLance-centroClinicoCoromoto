@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Test for jQuery validate() plugin</title>
+	<link rel="stylesheet" media="screen" href="css/screen.css">
+	<style>
+	.warning {
+		color: red;
+	}
+	</style>
+	<script src="../lib/jquery.js"></script>
+	<script src="../lib/jquery.mockjax.js"></script>
+	<script src="../lib/jquery.form.js"></script>
+	<script src="../dist/jquery.validate.js"></script>
+	<script>
+
+	</script>
+</head>
+<body>
+<h1 id="banner"><a href="http://jqueryvalidation.org/">jQuery Validation Plugin</a> Demo</h1>
+<div id="main">
+	<form method="post" class="cmxform" id="form" action="login.action">
+		<fieldset>
+			<legend>Login Form (Enter "foobar" as password)</legend>
+			<p>
+				<label for="user">Username</label>
+				<input id="user" name="user" required minlength="3">
+			</p>
+			<p>
+				<label for="pass">Password</label>
+				<input type="password" name="password" id="password" required minlength "5">
+			</p>
+			<p>
+				<input class="submit" type="submit" value="Login">
+			</p>
+		</fieldset>
+	</form>
+	<div id="result" class="warning">Please login!</div>
+	<br>
+	<button id="reset">Programmatically reset above form!</button>
+	<a href="index.html">Back to main page</a><script>
+    $("#form").validate();</script>
+</div>
+</body>
+</html>

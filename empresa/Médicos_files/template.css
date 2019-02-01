@@ -1,0 +1,8 @@
+body {margin: 0; padding: 0; background-color: #FFFFFF; background-image: url('bg.jpg'); background-repeat: repeat; background-position: left top; }
+#imSite {width: 988px; margin: 15px auto; text-align: left; }
+#imHeader {height: 300px; background-image: url('top.jpg'); background-repeat: no-repeat; }
+#imBody {background-color: #FFFFFF; }
+#imMenuMain {height: 30px; padding: 1px 7px 0 7px; background-color: #000059; }
+#imContent {clear: left; padding: 1px 7px 0 7px; }
+#imFooter {clear: both; height: 50px; background-color: #000059; background-image: url('bottom.jpg'); background-repeat: no-repeat; }
+
